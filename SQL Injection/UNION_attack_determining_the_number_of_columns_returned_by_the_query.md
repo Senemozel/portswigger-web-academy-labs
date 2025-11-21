@@ -8,7 +8,7 @@ First, I tested the category parameter with `'+UNION+SELECT+NULL--` which produc
 
 The backend query looks like this:
 ```sql
-SELECT column1, column2, column3 FROM products WHERE category='Gift' UNION SELECT NULL,NULL,NULL--'
+SELECT column1, column2, column3 FROM products WHERE category='Gifts' UNION SELECT NULL,NULL,NULL--'
 ```
 
 UNION requires both queries to have the same number of columns. By testing with NULL values, I can determine the correct column count without knowing column names or types.
